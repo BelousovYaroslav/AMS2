@@ -69,7 +69,7 @@ public class AMSConstants {
     
     
     //DAC SPECIALS
-    public static final double DAC_MAX_OUTPUT_VOLTAGE = 9.0;
+    public static final double DAC_MAX_OUTPUT_VOLTAGE = 4.0;
     public static final double DAC_MAX_OUTPUT_VOLTAGE_WARN = 8.5;
     public static final double DAC_CHANNEL_REG_ON_DAC_VOLT = 6.0;
     public static final double DAC_CHANNEL_REG_OFF_DAC_VOLT = 3.0;
@@ -86,15 +86,5 @@ public class AMSConstants {
         T_DEVICES.add( T_DEVICE6);
         T_DEVICES.add( T_DEVICE7);
         T_DEVICES.add( T_DEVICE8);
-        
-        CHANNELS = new LinkedList();
-        CHANNELS.add( CHANNEL1);
-        CHANNELS.add( CHANNEL2);
-        CHANNELS.add( CHANNEL3);
-        CHANNELS.add( CHANNEL4);
-        CHANNELS.add( CHANNEL5);
-        CHANNELS.add( CHANNEL6);
-        CHANNELS.add( CHANNEL7);
-        CHANNELS.add( CHANNEL8);
     }
 }

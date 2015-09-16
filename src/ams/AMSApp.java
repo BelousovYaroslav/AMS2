@@ -124,6 +124,7 @@ public class AMSApp {
     public final Adam4024 m_DAC_tubulations_02;
     */
     
+    
     private final AMSResources m_resources;
     public AMSResources GetResources() { return m_resources; }
     
@@ -239,7 +240,7 @@ public class AMSApp {
             switch( i) {
                 case  0: mngr = m_DeviceManager0_a; break;                    
                 case  1: mngr = m_DeviceManager0_t; break;
-                /*case  2: mngr = m_DeviceManager1_a; break;                        
+                case  2: mngr = m_DeviceManager1_a; break;                        
                 case  3: mngr = m_DeviceManager1_t; break;
                 case  4: mngr = m_DeviceManager2_a; break;                    
                 case  5: mngr = m_DeviceManager2_t; break;
@@ -253,7 +254,6 @@ public class AMSApp {
                 case 13: mngr = m_DeviceManager6_t; break;
                 case 14: mngr = m_DeviceManager7_a; break;                        
                 case 15: mngr = m_DeviceManager7_t; break;
-                    */
             }
             
             if( mngr != null) {
@@ -320,7 +320,7 @@ public class AMSApp {
             switch( i) {
                 case  0: mngr = m_DeviceManager0_a; break;
                 case  1: mngr = m_DeviceManager0_t; break;
-                /*case  2: mngr = m_DeviceManager1_a; break;
+                case  2: mngr = m_DeviceManager1_a; break;
                 case  3: mngr = m_DeviceManager1_t; break;
                 case  4: mngr = m_DeviceManager2_a; break;
                 case  5: mngr = m_DeviceManager2_t; break;
@@ -333,7 +333,7 @@ public class AMSApp {
                 case 12: mngr = m_DeviceManager6_a; break;
                 case 13: mngr = m_DeviceManager6_t; break;
                 case 14: mngr = m_DeviceManager7_a; break;
-                case 15: mngr = m_DeviceManager7_t; break;*/
+                case 15: mngr = m_DeviceManager7_t; break;
             }
             
             if( mngr != null) {           
@@ -403,12 +403,6 @@ public class AMSApp {
         m_devicesSet = new AMSDevicesSet( this);
         m_devicesSet.initialize();
         
-        logger.fatal("TODO: AUTOMATE!");
-        m_devicesSet.GetADC( AMSConstants.ADC1).SetChannel1Descriptor( AMSConstants.ADC_ANODE_CURRENT);
-        m_devicesSet.GetADC( AMSConstants.ADC1).SetChannel2Descriptor( AMSConstants.ADC_ANODE_VOLTAGE);
-        m_devicesSet.GetADC( AMSConstants.ADC1).SetChannel3Descriptor( AMSConstants.ADC_TUBULATION_CURRENT);
-        m_devicesSet.GetADC( AMSConstants.ADC1).SetChannel4Descriptor( AMSConstants.ADC_TUBULATION_VOLTAGE);
-        
         //Номера испытуемых приборов
         m_devSerNums = new AMSDevSerialNumbers();
         
@@ -432,6 +426,9 @@ public class AMSApp {
         relay         = m_devicesSet.GetRelay( m_Settings.GetDev1().GetAnoRelDev());
         relay_channel = m_Settings.GetDev1().GetAnoRelChan();
         
+        adcV.SetChannelDescriptor( adcV_channel, AMSConstants.ADC_ANODE_VOLTAGE);
+        adcC.SetChannelDescriptor( adcC_channel, AMSConstants.ADC_ANODE_CURRENT);
+        
         m_DeviceManager0_a = new AMSDeviceManager( this);
         m_DeviceManager0_a.SetADCVoltage( adcV, adcV_channel);
         m_DeviceManager0_a.SetADCCurrent( adcC, adcC_channel);
@@ -449,6 +446,9 @@ public class AMSApp {
         relay         = m_devicesSet.GetRelay( m_Settings.GetDev1().GetTubRelDev());
         relay_channel = m_Settings.GetDev1().GetTubRelChan();
         
+        adcV.SetChannelDescriptor( adcV_channel, AMSConstants.ADC_TUBULATION_VOLTAGE);
+        adcC.SetChannelDescriptor( adcC_channel, AMSConstants.ADC_TUBULATION_CURRENT);
+        
         m_DeviceManager0_t = new AMSDeviceManager( this);
         m_DeviceManager0_t.SetADCVoltage( adcV, adcV_channel);
         m_DeviceManager0_t.SetADCCurrent( adcC, adcC_channel);
@@ -456,7 +456,6 @@ public class AMSApp {
         m_DeviceManager0_t.SetRelay(relay, relay_channel);
         m_DeviceManager0_t.SetEnabled( false);
         
-        /*
         //************************************************************
         //DEVICE2
         //DEVICE2.ANODE
@@ -468,6 +467,9 @@ public class AMSApp {
         dac_channel   = m_Settings.GetDev2().GetAnoDacChan();
         relay         = m_devicesSet.GetRelay( m_Settings.GetDev2().GetAnoRelDev());
         relay_channel = m_Settings.GetDev2().GetAnoRelChan();
+        
+        adcV.SetChannelDescriptor( adcV_channel, AMSConstants.ADC_ANODE_VOLTAGE);
+        adcC.SetChannelDescriptor( adcC_channel, AMSConstants.ADC_ANODE_CURRENT);
         
         m_DeviceManager1_a = new AMSDeviceManager( this);
         m_DeviceManager1_a.SetADCVoltage( adcV, adcV_channel);
@@ -485,6 +487,9 @@ public class AMSApp {
         dac_channel   = m_Settings.GetDev2().GetTubDacChan();
         relay         = m_devicesSet.GetRelay( m_Settings.GetDev2().GetTubRelDev());
         relay_channel = m_Settings.GetDev2().GetTubRelChan();
+        
+        adcV.SetChannelDescriptor( adcV_channel, AMSConstants.ADC_TUBULATION_VOLTAGE);
+        adcC.SetChannelDescriptor( adcC_channel, AMSConstants.ADC_TUBULATION_CURRENT);
         
         m_DeviceManager1_t = new AMSDeviceManager( this);
         m_DeviceManager1_t.SetADCVoltage( adcV, adcV_channel);
@@ -505,6 +510,9 @@ public class AMSApp {
         relay         = m_devicesSet.GetRelay( m_Settings.GetDev3().GetAnoRelDev());
         relay_channel = m_Settings.GetDev3().GetAnoRelChan();
         
+        adcV.SetChannelDescriptor( adcV_channel, AMSConstants.ADC_ANODE_VOLTAGE);
+        adcC.SetChannelDescriptor( adcC_channel, AMSConstants.ADC_ANODE_CURRENT);
+        
         m_DeviceManager2_a = new AMSDeviceManager( this);
         m_DeviceManager2_a.SetADCVoltage( adcV, adcV_channel);
         m_DeviceManager2_a.SetADCCurrent( adcC, adcC_channel);
@@ -521,6 +529,9 @@ public class AMSApp {
         dac_channel   = m_Settings.GetDev3().GetTubDacChan();
         relay         = m_devicesSet.GetRelay( m_Settings.GetDev3().GetTubRelDev());
         relay_channel = m_Settings.GetDev3().GetTubRelChan();
+        
+        adcV.SetChannelDescriptor( adcV_channel, AMSConstants.ADC_TUBULATION_VOLTAGE);
+        adcC.SetChannelDescriptor( adcC_channel, AMSConstants.ADC_TUBULATION_CURRENT);
         
         m_DeviceManager2_t = new AMSDeviceManager( this);
         m_DeviceManager2_t.SetADCVoltage( adcV, adcV_channel);
@@ -541,6 +552,9 @@ public class AMSApp {
         relay         = m_devicesSet.GetRelay( m_Settings.GetDev4().GetAnoRelDev());
         relay_channel = m_Settings.GetDev4().GetAnoRelChan();
         
+        adcV.SetChannelDescriptor( adcV_channel, AMSConstants.ADC_ANODE_VOLTAGE);
+        adcC.SetChannelDescriptor( adcC_channel, AMSConstants.ADC_ANODE_CURRENT);
+        
         m_DeviceManager3_a = new AMSDeviceManager( this);
         m_DeviceManager3_a.SetADCVoltage( adcV, adcV_channel);
         m_DeviceManager3_a.SetADCCurrent( adcC, adcC_channel);
@@ -557,6 +571,9 @@ public class AMSApp {
         dac_channel   = m_Settings.GetDev4().GetTubDacChan();
         relay         = m_devicesSet.GetRelay( m_Settings.GetDev4().GetTubRelDev());
         relay_channel = m_Settings.GetDev4().GetTubRelChan();
+        
+        adcV.SetChannelDescriptor( adcV_channel, AMSConstants.ADC_TUBULATION_VOLTAGE);
+        adcC.SetChannelDescriptor( adcC_channel, AMSConstants.ADC_TUBULATION_CURRENT);
         
         m_DeviceManager3_t = new AMSDeviceManager( this);
         m_DeviceManager3_t.SetADCVoltage( adcV, adcV_channel);
@@ -577,6 +594,9 @@ public class AMSApp {
         relay         = m_devicesSet.GetRelay( m_Settings.GetDev5().GetAnoRelDev());
         relay_channel = m_Settings.GetDev5().GetAnoRelChan();
         
+        adcV.SetChannelDescriptor( adcV_channel, AMSConstants.ADC_ANODE_VOLTAGE);
+        adcC.SetChannelDescriptor( adcC_channel, AMSConstants.ADC_ANODE_CURRENT);
+        
         m_DeviceManager4_a = new AMSDeviceManager( this);
         m_DeviceManager4_a.SetADCVoltage( adcV, adcV_channel);
         m_DeviceManager4_a.SetADCCurrent( adcC, adcC_channel);
@@ -593,6 +613,9 @@ public class AMSApp {
         dac_channel   = m_Settings.GetDev5().GetTubDacChan();
         relay         = m_devicesSet.GetRelay( m_Settings.GetDev5().GetTubRelDev());
         relay_channel = m_Settings.GetDev5().GetTubRelChan();
+        
+        adcV.SetChannelDescriptor( adcV_channel, AMSConstants.ADC_TUBULATION_VOLTAGE);
+        adcC.SetChannelDescriptor( adcC_channel, AMSConstants.ADC_TUBULATION_CURRENT);
         
         m_DeviceManager4_t = new AMSDeviceManager( this);
         m_DeviceManager4_t.SetADCVoltage( adcV, adcV_channel);
@@ -613,6 +636,9 @@ public class AMSApp {
         relay         = m_devicesSet.GetRelay( m_Settings.GetDev6().GetAnoRelDev());
         relay_channel = m_Settings.GetDev6().GetAnoRelChan();
         
+        adcV.SetChannelDescriptor( adcV_channel, AMSConstants.ADC_ANODE_VOLTAGE);
+        adcC.SetChannelDescriptor( adcC_channel, AMSConstants.ADC_ANODE_CURRENT);
+        
         m_DeviceManager5_a = new AMSDeviceManager( this);
         m_DeviceManager5_a.SetADCVoltage( adcV, adcV_channel);
         m_DeviceManager5_a.SetADCCurrent( adcC, adcC_channel);
@@ -629,6 +655,9 @@ public class AMSApp {
         dac_channel   = m_Settings.GetDev6().GetTubDacChan();
         relay         = m_devicesSet.GetRelay( m_Settings.GetDev6().GetTubRelDev());
         relay_channel = m_Settings.GetDev6().GetTubRelChan();
+        
+        adcV.SetChannelDescriptor( adcV_channel, AMSConstants.ADC_TUBULATION_VOLTAGE);
+        adcC.SetChannelDescriptor( adcC_channel, AMSConstants.ADC_TUBULATION_CURRENT);
         
         m_DeviceManager5_t = new AMSDeviceManager( this);
         m_DeviceManager5_t.SetADCVoltage( adcV, adcV_channel);
@@ -649,6 +678,9 @@ public class AMSApp {
         relay         = m_devicesSet.GetRelay( m_Settings.GetDev7().GetAnoRelDev());
         relay_channel = m_Settings.GetDev7().GetAnoRelChan();
         
+        adcV.SetChannelDescriptor( adcV_channel, AMSConstants.ADC_ANODE_VOLTAGE);
+        adcC.SetChannelDescriptor( adcC_channel, AMSConstants.ADC_ANODE_CURRENT);
+        
         m_DeviceManager6_a = new AMSDeviceManager( this);
         m_DeviceManager6_a.SetADCVoltage( adcV, adcV_channel);
         m_DeviceManager6_a.SetADCCurrent( adcC, adcC_channel);
@@ -665,6 +697,9 @@ public class AMSApp {
         dac_channel   = m_Settings.GetDev7().GetTubDacChan();
         relay         = m_devicesSet.GetRelay( m_Settings.GetDev7().GetTubRelDev());
         relay_channel = m_Settings.GetDev7().GetTubRelChan();
+        
+        adcV.SetChannelDescriptor( adcV_channel, AMSConstants.ADC_TUBULATION_VOLTAGE);
+        adcC.SetChannelDescriptor( adcC_channel, AMSConstants.ADC_TUBULATION_CURRENT);
         
         m_DeviceManager6_t = new AMSDeviceManager( this);
         m_DeviceManager6_t.SetADCVoltage( adcV, adcV_channel);
@@ -685,6 +720,9 @@ public class AMSApp {
         relay         = m_devicesSet.GetRelay( m_Settings.GetDev8().GetAnoRelDev());
         relay_channel = m_Settings.GetDev8().GetAnoRelChan();
         
+        adcV.SetChannelDescriptor( adcV_channel, AMSConstants.ADC_ANODE_VOLTAGE);
+        adcC.SetChannelDescriptor( adcC_channel, AMSConstants.ADC_ANODE_CURRENT);
+        
         m_DeviceManager7_a = new AMSDeviceManager( this);
         m_DeviceManager7_a.SetADCVoltage( adcV, adcV_channel);
         m_DeviceManager7_a.SetADCCurrent( adcC, adcC_channel);
@@ -702,19 +740,21 @@ public class AMSApp {
         relay         = m_devicesSet.GetRelay( m_Settings.GetDev8().GetTubRelDev());
         relay_channel = m_Settings.GetDev8().GetTubRelChan();
         
+        adcV.SetChannelDescriptor( adcV_channel, AMSConstants.ADC_TUBULATION_VOLTAGE);
+        adcC.SetChannelDescriptor( adcC_channel, AMSConstants.ADC_TUBULATION_CURRENT);
+        
         m_DeviceManager7_t = new AMSDeviceManager( this);
         m_DeviceManager7_t.SetADCVoltage( adcV, adcV_channel);
         m_DeviceManager7_t.SetADCCurrent( adcC, adcC_channel);
         m_DeviceManager7_t.SetDAC( dac, dac_channel);
         m_DeviceManager7_t.SetRelay(relay, relay_channel);
         m_DeviceManager7_t.SetEnabled( false);
-        */
+        
         
         //*******************************************************************
         // Setting neighbours
         m_DeviceManager0_a.SetNeighbourManager( m_DeviceManager0_t);
         m_DeviceManager0_t.SetNeighbourManager( m_DeviceManager0_a);
-        /*
         m_DeviceManager1_a.SetNeighbourManager( m_DeviceManager1_t);
         m_DeviceManager1_t.SetNeighbourManager( m_DeviceManager1_a);
         m_DeviceManager2_a.SetNeighbourManager( m_DeviceManager2_t);
@@ -729,7 +769,6 @@ public class AMSApp {
         m_DeviceManager6_t.SetNeighbourManager( m_DeviceManager6_a);
         m_DeviceManager7_a.SetNeighbourManager( m_DeviceManager7_t);
         m_DeviceManager7_t.SetNeighbourManager( m_DeviceManager7_a);
-        */
     }
     
     
@@ -791,7 +830,6 @@ public class AMSApp {
             return;
         }
         
-        /*
         //RELAY2
         try {
             relay = m_devicesSet.GetRelay( AMSConstants.REL2);
@@ -811,7 +849,6 @@ public class AMSApp {
             logger.fatal( "Exception при инициализации RELAY2", e);
             return;
         }
-        */
         
         //**********************************************************************
         //ADC1
@@ -835,7 +872,7 @@ public class AMSApp {
             logger.fatal( "Exception при инициализации ADC1", e);
             return;
         }
-        /*
+        
         //****************************************************************
         //ADC2
         try {
@@ -902,7 +939,7 @@ public class AMSApp {
             logger.fatal( "Exception при инициализации ADC4", e);
             return;
         }
-        */
+        
         //**********************************************************************
         //DAC1
         try {
@@ -922,7 +959,7 @@ public class AMSApp {
             logger.fatal( "Exception при инициализации DAC1", e);
             return;
         }
-        /*
+        
         
         //DAC2
         try {
@@ -981,7 +1018,6 @@ public class AMSApp {
             logger.fatal( "Exception при инициализации DAC4", e);
             return;
         }
-        */
     }
     
     public void start() {
@@ -1102,7 +1138,6 @@ public class AMSApp {
             if( m_DeviceManager0_a.GetADCCurrent()== adc && m_DeviceManager0_a.GetAdcCurrentChannel() == nChannel) processor = m_DeviceManager0_a;
             if( m_DeviceManager0_t.GetADCCurrent()== adc && m_DeviceManager0_t.GetAdcCurrentChannel() == nChannel) processor = m_DeviceManager0_t;
         
-            /*
             if( m_DeviceManager1_a.GetADCCurrent() == adc && m_DeviceManager1_a.GetAdcCurrentChannel() == nChannel) processor = m_DeviceManager1_a;
             if( m_DeviceManager1_t.GetADCCurrent() == adc && m_DeviceManager1_t.GetAdcCurrentChannel() == nChannel) processor = m_DeviceManager1_t;
         
@@ -1126,7 +1161,7 @@ public class AMSApp {
         
             if( m_DeviceManager7_a.GetADCCurrent() == adc && m_DeviceManager7_a.GetAdcCurrentChannel() == nChannel) processor = m_DeviceManager7_a;
             if( m_DeviceManager7_t.GetADCCurrent() == adc && m_DeviceManager7_t.GetAdcCurrentChannel() == nChannel) processor = m_DeviceManager7_t;
-            */
+            
         
             if( processor != null) {
                 logger.info( "ManageChannel(): Нашли управленца для заданного устройства (" + adc.GetDescription() + ") и канала [" + nChannel+ "]!");
@@ -1164,7 +1199,7 @@ public class AMSApp {
             
             if( m_DeviceManager0_a.GetADCVoltage()== adc && m_DeviceManager0_a.GetAdcVoltageChannel() == nChannel) processor = m_DeviceManager0_a;
             if( m_DeviceManager0_t.GetADCVoltage()== adc && m_DeviceManager0_t.GetAdcVoltageChannel() == nChannel) processor = m_DeviceManager0_t;
-            /*
+            
             if( m_DeviceManager1_a.GetADCVoltage() == adc && m_DeviceManager1_a.GetAdcVoltageChannel() == nChannel) processor = m_DeviceManager1_a;
             if( m_DeviceManager1_t.GetADCVoltage() == adc && m_DeviceManager1_t.GetAdcVoltageChannel() == nChannel) processor = m_DeviceManager1_t;
         
@@ -1185,7 +1220,7 @@ public class AMSApp {
         
             if( m_DeviceManager7_a.GetADCVoltage() == adc && m_DeviceManager7_a.GetAdcVoltageChannel() == nChannel) processor = m_DeviceManager7_a;
             if( m_DeviceManager7_t.GetADCVoltage() == adc && m_DeviceManager7_t.GetAdcVoltageChannel() == nChannel) processor = m_DeviceManager7_t;
-            */
+            
             if( processor != null) {
                 logger.info( "ManageChannel(): Нашли управленца для заданного устройства (" + adc.GetDescription() + ") и канала [" + nChannel+ "]!");
                 processor.ActionV();

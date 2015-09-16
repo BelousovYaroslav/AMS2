@@ -7,56 +7,56 @@
   <COM_Parity>None</COM_Parity>
   <COM_StopBits>1</COM_StopBits>
   <Devices>
-    <ADC1>02</ADC1>
-    <ADC2>102</ADC2>
-    <DAC1>14</DAC1>
-    <DAC2>104</DAC2>
+    <ADC1>01</ADC1>
+    <ADC2>02</ADC2>
+    <DAC1>03</DAC1>
+    <DAC2>04</DAC2>
     <REL1>05</REL1>
-    <ADC3>111</ADC3>
-    <ADC4>112</ADC4>
-    <DAC3>113</DAC3>
-    <DAC4>114</DAC4>
-    <REL2>115</REL2>
+    <ADC3>11</ADC3>
+    <ADC4>12</ADC4>
+    <DAC3>13</DAC3>
+    <DAC4>14</DAC4>
+    <REL2>15</REL2>
   </Devices>
   <Device0_channels>
     <anode>
-      <ADC_V_DEV>1</ADC_V_DEV>
-      <ADC_V_CHAN>1</ADC_V_CHAN>
-      <ADC_C_DEV>1</ADC_C_DEV>
-      <ADC_C_CHAN>0</ADC_C_CHAN>
-      <DAC_DEV>5</DAC_DEV>
+      <ADC_V_DEV>2</ADC_V_DEV>
+      <ADC_V_CHAN>7</ADC_V_CHAN>
+      <ADC_C_DEV>4</ADC_C_DEV>
+      <ADC_C_CHAN>7</ADC_C_CHAN>
+      <DAC_DEV>7</DAC_DEV>
       <DAC_CHAN>0</DAC_CHAN>
       <REL_DEV>9</REL_DEV>
-      <REL_CHAN>6</REL_CHAN>
+      <REL_CHAN>0</REL_CHAN>
     </anode>
     <tubulation>
-      <ADC_V_DEV>1</ADC_V_DEV>
-      <ADC_V_CHAN>3</ADC_V_CHAN>
-      <ADC_C_DEV>1</ADC_C_DEV>
-      <ADC_C_CHAN>2</ADC_C_CHAN>
-      <DAC_DEV>5</DAC_DEV>
+      <ADC_V_DEV>2</ADC_V_DEV>
+      <ADC_V_CHAN>6</ADC_V_CHAN>
+      <ADC_C_DEV>4</ADC_C_DEV>
+      <ADC_C_CHAN>6</ADC_C_CHAN>
+      <DAC_DEV>7</DAC_DEV>
       <DAC_CHAN>1</DAC_CHAN>
       <REL_DEV>9</REL_DEV>
-      <REL_CHAN>7</REL_CHAN>
+      <REL_CHAN>1</REL_CHAN>
     </tubulation>
   </Device0_channels>
   <Device1_channels>
     <anode>
-      <ADC_V_DEV>1</ADC_V_DEV>
-      <ADC_V_CHAN>4</ADC_V_CHAN>
-      <ADC_C_DEV>1</ADC_C_DEV>
+      <ADC_V_DEV>2</ADC_V_DEV>
+      <ADC_V_CHAN>5</ADC_V_CHAN>
+      <ADC_C_DEV>4</ADC_C_DEV>
       <ADC_C_CHAN>5</ADC_C_CHAN>
-      <DAC_DEV>5</DAC_DEV>
+      <DAC_DEV>7</DAC_DEV>
       <DAC_CHAN>2</DAC_CHAN>
       <REL_DEV>9</REL_DEV>
       <REL_CHAN>2</REL_CHAN>
     </anode>
     <tubulation>
-      <ADC_V_DEV>1</ADC_V_DEV>
-      <ADC_V_CHAN>6</ADC_V_CHAN>
-      <ADC_C_DEV>1</ADC_C_DEV>
-      <ADC_C_CHAN>7</ADC_C_CHAN>
-      <DAC_DEV>5</DAC_DEV>
+      <ADC_V_DEV>2</ADC_V_DEV>
+      <ADC_V_CHAN>4</ADC_V_CHAN>
+      <ADC_C_DEV>4</ADC_C_DEV>
+      <ADC_C_CHAN>4</ADC_C_CHAN>
+      <DAC_DEV>7</DAC_DEV>
       <DAC_CHAN>3</DAC_CHAN>
       <REL_DEV>9</REL_DEV>
       <REL_CHAN>3</REL_CHAN>
@@ -65,20 +65,20 @@
   <Device2_channels>
     <anode>
       <ADC_V_DEV>2</ADC_V_DEV>
-      <ADC_V_CHAN>0</ADC_V_CHAN>
-      <ADC_C_DEV>2</ADC_C_DEV>
-      <ADC_C_CHAN>2</ADC_C_CHAN>
-      <DAC_DEV>6</DAC_DEV>
+      <ADC_V_CHAN>3</ADC_V_CHAN>
+      <ADC_C_DEV>4</ADC_C_DEV>
+      <ADC_C_CHAN>3</ADC_C_CHAN>
+      <DAC_DEV>8</DAC_DEV>
       <DAC_CHAN>0</DAC_CHAN>
       <REL_DEV>9</REL_DEV>
       <REL_CHAN>4</REL_CHAN>
     </anode>
     <tubulation>
       <ADC_V_DEV>2</ADC_V_DEV>
-      <ADC_V_CHAN>1</ADC_V_CHAN>
-      <ADC_C_DEV>2</ADC_C_DEV>
-      <ADC_C_CHAN>3</ADC_C_CHAN>
-      <DAC_DEV>6</DAC_DEV>
+      <ADC_V_CHAN>2</ADC_V_CHAN>
+      <ADC_C_DEV>4</ADC_C_DEV>
+      <ADC_C_CHAN>2</ADC_C_CHAN>
+      <DAC_DEV>8</DAC_DEV>
       <DAC_CHAN>1</DAC_CHAN>
       <REL_DEV>9</REL_DEV>
       <REL_CHAN>5</REL_CHAN>
@@ -87,42 +87,42 @@
   <Device3_channels>
     <anode>
       <ADC_V_DEV>2</ADC_V_DEV>
-      <ADC_V_CHAN>4</ADC_V_CHAN>
-      <ADC_C_DEV>2</ADC_C_DEV>
-      <ADC_C_CHAN>6</ADC_C_CHAN>
-      <DAC_DEV>6</DAC_DEV>
+      <ADC_V_CHAN>1</ADC_V_CHAN>
+      <ADC_C_DEV>4</ADC_C_DEV>
+      <ADC_C_CHAN>1</ADC_C_CHAN>
+      <DAC_DEV>8</DAC_DEV>
       <DAC_CHAN>2</DAC_CHAN>
       <REL_DEV>9</REL_DEV>
-      <REL_CHAN>0</REL_CHAN>
+      <REL_CHAN>6</REL_CHAN>
     </anode>
     <tubulation>
       <ADC_V_DEV>2</ADC_V_DEV>
-      <ADC_V_CHAN>5</ADC_V_CHAN>
-      <ADC_C_DEV>2</ADC_C_DEV>
-      <ADC_C_CHAN>7</ADC_C_CHAN>
-      <DAC_DEV>6</DAC_DEV>
+      <ADC_V_CHAN>0</ADC_V_CHAN>
+      <ADC_C_DEV>4</ADC_C_DEV>
+      <ADC_C_CHAN>0</ADC_C_CHAN>
+      <DAC_DEV>8</DAC_DEV>
       <DAC_CHAN>3</DAC_CHAN>
       <REL_DEV>9</REL_DEV>
-      <REL_CHAN>1</REL_CHAN>
+      <REL_CHAN>7</REL_CHAN>
     </tubulation>
   </Device3_channels>
   <Device4_channels>
     <anode>
       <ADC_V_DEV>3</ADC_V_DEV>
-      <ADC_V_CHAN>0</ADC_V_CHAN>
-      <ADC_C_DEV>3</ADC_C_DEV>
-      <ADC_C_CHAN>2</ADC_C_CHAN>
-      <DAC_DEV>7</DAC_DEV>
+      <ADC_V_CHAN>7</ADC_V_CHAN>
+      <ADC_C_DEV>1</ADC_C_DEV>
+      <ADC_C_CHAN>7</ADC_C_CHAN>
+      <DAC_DEV>6</DAC_DEV>
       <DAC_CHAN>0</DAC_CHAN>
       <REL_DEV>10</REL_DEV>
       <REL_CHAN>0</REL_CHAN>
     </anode>
     <tubulation>
       <ADC_V_DEV>3</ADC_V_DEV>
-      <ADC_V_CHAN>1</ADC_V_CHAN>
-      <ADC_C_DEV>3</ADC_C_DEV>
-      <ADC_C_CHAN>3</ADC_C_CHAN>
-      <DAC_DEV>7</DAC_DEV>
+      <ADC_V_CHAN>6</ADC_V_CHAN>
+      <ADC_C_DEV>1</ADC_C_DEV>
+      <ADC_C_CHAN>6</ADC_C_CHAN>
+      <DAC_DEV>6</DAC_DEV>
       <DAC_CHAN>1</DAC_CHAN>
       <REL_DEV>10</REL_DEV>
       <REL_CHAN>1</REL_CHAN>
@@ -131,20 +131,20 @@
   <Device5_channels>
     <anode>
       <ADC_V_DEV>3</ADC_V_DEV>
-      <ADC_V_CHAN>4</ADC_V_CHAN>
-      <ADC_C_DEV>3</ADC_C_DEV>
-      <ADC_C_CHAN>6</ADC_C_CHAN>
-      <DAC_DEV>7</DAC_DEV>
+      <ADC_V_CHAN>5</ADC_V_CHAN>
+      <ADC_C_DEV>1</ADC_C_DEV>
+      <ADC_C_CHAN>5</ADC_C_CHAN>
+      <DAC_DEV>6</DAC_DEV>
       <DAC_CHAN>2</DAC_CHAN>
       <REL_DEV>10</REL_DEV>
       <REL_CHAN>2</REL_CHAN>
     </anode>
     <tubulation>
       <ADC_V_DEV>3</ADC_V_DEV>
-      <ADC_V_CHAN>5</ADC_V_CHAN>
-      <ADC_C_DEV>3</ADC_C_DEV>
-      <ADC_C_CHAN>7</ADC_C_CHAN>
-      <DAC_DEV>7</DAC_DEV>
+      <ADC_V_CHAN>4</ADC_V_CHAN>
+      <ADC_C_DEV>1</ADC_C_DEV>
+      <ADC_C_CHAN>4</ADC_C_CHAN>
+      <DAC_DEV>6</DAC_DEV>
       <DAC_CHAN>3</DAC_CHAN>
       <REL_DEV>10</REL_DEV>
       <REL_CHAN>3</REL_CHAN>
@@ -152,21 +152,21 @@
   </Device5_channels>
   <Device6_channels>
     <anode>
-      <ADC_V_DEV>4</ADC_V_DEV>
-      <ADC_V_CHAN>0</ADC_V_CHAN>
-      <ADC_C_DEV>4</ADC_C_DEV>
-      <ADC_C_CHAN>2</ADC_C_CHAN>
-      <DAC_DEV>8</DAC_DEV>
+      <ADC_V_DEV>3</ADC_V_DEV>
+      <ADC_V_CHAN>3</ADC_V_CHAN>
+      <ADC_C_DEV>1</ADC_C_DEV>
+      <ADC_C_CHAN>3</ADC_C_CHAN>
+      <DAC_DEV>5</DAC_DEV>
       <DAC_CHAN>0</DAC_CHAN>
       <REL_DEV>10</REL_DEV>
       <REL_CHAN>4</REL_CHAN>
     </anode>
     <tubulation>
-      <ADC_V_DEV>4</ADC_V_DEV>
-      <ADC_V_CHAN>1</ADC_V_CHAN>
-      <ADC_C_DEV>4</ADC_C_DEV>
-      <ADC_C_CHAN>3</ADC_C_CHAN>
-      <DAC_DEV>8</DAC_DEV>
+      <ADC_V_DEV>3</ADC_V_DEV>
+      <ADC_V_CHAN>2</ADC_V_CHAN>
+      <ADC_C_DEV>1</ADC_C_DEV>
+      <ADC_C_CHAN>2</ADC_C_CHAN>
+      <DAC_DEV>5</DAC_DEV>
       <DAC_CHAN>1</DAC_CHAN>
       <REL_DEV>10</REL_DEV>
       <REL_CHAN>5</REL_CHAN>
@@ -174,21 +174,21 @@
   </Device6_channels>
   <Device7_channels>
     <anode>
-      <ADC_V_DEV>4</ADC_V_DEV>
-      <ADC_V_CHAN>4</ADC_V_CHAN>
-      <ADC_C_DEV>4</ADC_C_DEV>
-      <ADC_C_CHAN>6</ADC_C_CHAN>
-      <DAC_DEV>8</DAC_DEV>
+      <ADC_V_DEV>3</ADC_V_DEV>
+      <ADC_V_CHAN>1</ADC_V_CHAN>
+      <ADC_C_DEV>1</ADC_C_DEV>
+      <ADC_C_CHAN>1</ADC_C_CHAN>
+      <DAC_DEV>5</DAC_DEV>
       <DAC_CHAN>2</DAC_CHAN>
       <REL_DEV>10</REL_DEV>
       <REL_CHAN>6</REL_CHAN>
     </anode>
     <tubulation>
-      <ADC_V_DEV>4</ADC_V_DEV>
-      <ADC_V_CHAN>5</ADC_V_CHAN>
-      <ADC_C_DEV>4</ADC_C_DEV>
-      <ADC_C_CHAN>7</ADC_C_CHAN>
-      <DAC_DEV>8</DAC_DEV>
+      <ADC_V_DEV>3</ADC_V_DEV>
+      <ADC_V_CHAN>0</ADC_V_CHAN>
+      <ADC_C_DEV>1</ADC_C_DEV>
+      <ADC_C_CHAN>0</ADC_C_CHAN>
+      <DAC_DEV>5</DAC_DEV>
       <DAC_CHAN>3</DAC_CHAN>
       <REL_DEV>10</REL_DEV>
       <REL_CHAN>7</REL_CHAN>

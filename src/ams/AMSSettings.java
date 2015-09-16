@@ -306,11 +306,12 @@ public class AMSSettings {
             adams.addElement( "REL2").addText( m_strREL2Address);
             
             // ***** ***** ***** ***** *****
-            //for( int nDevice = AMSConstants.T_DEVICE1; nDevice < AMSConstants.T_DEVICE8; nDevice++) {
-            
-            Iterator it = AMSConstants.getInstance().T_DEVICES.iterator();
-            while( it.hasNext()) {
-                int nDevice = ( int) it.next();
+            //
+            //Iterator it = AMSConstants.getInstance().T_DEVICES.iterator();
+            //while( it.hasNext()) {            
+            for( int nDevice = AMSConstants.T_DEVICE1; nDevice <= AMSConstants.T_DEVICE8; nDevice++) {
+                
+                //int nDevice = ( int) it.next();
             
                 Element device = root.addElement( "Device" + nDevice + "_channels" );            
                 Element devAn = device.addElement( "anode");

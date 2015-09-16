@@ -190,7 +190,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         mapTestedDevicesTubulationRelays.put(AMSConstants.T_DEVICE7, lbl_Dev7_Tubu_RelState);
         mapTestedDevicesTubulationRelays.put(AMSConstants.T_DEVICE8, lbl_Dev8_Tubu_RelState);
         
-        //for( int nDevice = AMSConstants.T_DEVICE1; nDevice < AMSConstants.T_DEVICE8; nDevice++) {
         Iterator it = AMSConstants.getInstance().T_DEVICES.iterator();
         while( it.hasNext()) {
             int nDevice = ( int) it.next();
@@ -836,7 +835,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lblDev2_anode.setBounds(360, 340, 40, 30);
 
         btnDev2_Anode_Off.setText("ВЫКЛ");
-        btnDev2_Anode_Off.setEnabled(false);
         btnDev2_Anode_Off.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev2_Anode_OffActionPerformed(evt);
@@ -851,7 +849,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lbl_Dev2_Anode_RelState.setBounds(400, 340, 70, 30);
 
         btnDev2_Anode_On.setText("ВКЛ");
-        btnDev2_Anode_On.setEnabled(false);
         btnDev2_Anode_On.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev2_Anode_OnActionPerformed(evt);
@@ -867,7 +864,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lblDev3_anode.setBounds(480, 340, 40, 30);
 
         btnDev3_Anode_Off.setText("ВЫКЛ");
-        btnDev3_Anode_Off.setEnabled(false);
         btnDev3_Anode_Off.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev3_Anode_OffActionPerformed(evt);
@@ -882,7 +878,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lbl_Dev3_Anode_RelState.setBounds(520, 340, 70, 30);
 
         btnDev3_Anode_On.setText("ВКЛ");
-        btnDev3_Anode_On.setEnabled(false);
         btnDev3_Anode_On.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev3_Anode_OnActionPerformed(evt);
@@ -898,7 +893,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lblDev4_anode.setBounds(600, 340, 40, 30);
 
         btnDev4_Anode_Off.setText("ВЫКЛ");
-        btnDev4_Anode_Off.setEnabled(false);
         btnDev4_Anode_Off.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev4_Anode_OffActionPerformed(evt);
@@ -913,7 +907,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lbl_Dev4_Anode_RelState.setBounds(640, 340, 70, 30);
 
         btnDev4_Anode_On.setText("ВКЛ");
-        btnDev4_Anode_On.setEnabled(false);
         btnDev4_Anode_On.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev4_Anode_OnActionPerformed(evt);
@@ -929,7 +922,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lblDev5_anode.setBounds(720, 340, 40, 30);
 
         btnDev5_Anode_Off.setText("ВЫКЛ");
-        btnDev5_Anode_Off.setEnabled(false);
         btnDev5_Anode_Off.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev5_Anode_OffActionPerformed(evt);
@@ -944,7 +936,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lbl_Dev5_Anode_RelState.setBounds(760, 340, 70, 30);
 
         btnDev5_Anode_On.setText("ВКЛ");
-        btnDev5_Anode_On.setEnabled(false);
         btnDev5_Anode_On.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev5_Anode_OnActionPerformed(evt);
@@ -960,7 +951,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lblDev6_anode.setBounds(840, 340, 40, 30);
 
         btnDev6_Anode_Off.setText("ВЫКЛ");
-        btnDev6_Anode_Off.setEnabled(false);
         btnDev6_Anode_Off.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev6_Anode_OffActionPerformed(evt);
@@ -975,7 +965,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lbl_Dev6_Anode_RelState.setBounds(880, 340, 70, 30);
 
         btnDev6_Anode_On.setText("ВКЛ");
-        btnDev6_Anode_On.setEnabled(false);
         btnDev6_Anode_On.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev6_Anode_OnActionPerformed(evt);
@@ -991,7 +980,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lblDev7_anode.setBounds(960, 340, 40, 30);
 
         btnDev7_Anode_Off.setText("ВЫКЛ");
-        btnDev7_Anode_Off.setEnabled(false);
         btnDev7_Anode_Off.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev7_Anode_OffActionPerformed(evt);
@@ -1006,7 +994,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lbl_Dev7_Anode_RelState.setBounds(1000, 340, 70, 30);
 
         btnDev7_Anode_On.setText("ВКЛ");
-        btnDev7_Anode_On.setEnabled(false);
         btnDev7_Anode_On.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev7_Anode_OnActionPerformed(evt);
@@ -1022,7 +1009,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lblDev8_anode.setBounds(1080, 340, 40, 30);
 
         btnDev8_Anode_Off.setText("ВЫКЛ");
-        btnDev8_Anode_Off.setEnabled(false);
         btnDev8_Anode_Off.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev8_Anode_OffActionPerformed(evt);
@@ -1037,7 +1023,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lbl_Dev8_Anode_RelState.setBounds(1120, 340, 70, 30);
 
         btnDev8_Anode_On.setText("ВКЛ");
-        btnDev8_Anode_On.setEnabled(false);
         btnDev8_Anode_On.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev8_Anode_OnActionPerformed(evt);
@@ -1207,7 +1192,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lblDev2_tubu.setBounds(360, 730, 40, 30);
 
         btnDev2_Tubu_Off.setText("ВЫКЛ");
-        btnDev2_Tubu_Off.setEnabled(false);
         btnDev2_Tubu_Off.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev2_Tubu_OffActionPerformed(evt);
@@ -1222,7 +1206,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lbl_Dev2_Tubu_RelState.setBounds(400, 730, 70, 30);
 
         btnDev2_Tubu_On.setText("ВКЛ");
-        btnDev2_Tubu_On.setEnabled(false);
         btnDev2_Tubu_On.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev2_Tubu_OnActionPerformed(evt);
@@ -1238,7 +1221,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lblDev3_tubu.setBounds(480, 730, 40, 30);
 
         btnDev3_Tubu_Off.setText("ВЫКЛ");
-        btnDev3_Tubu_Off.setEnabled(false);
         btnDev3_Tubu_Off.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev3_Tubu_OffActionPerformed(evt);
@@ -1253,7 +1235,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lbl_Dev3_Tubu_RelState.setBounds(520, 730, 70, 30);
 
         btnDev3_Tubu_On.setText("ВКЛ");
-        btnDev3_Tubu_On.setEnabled(false);
         btnDev3_Tubu_On.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev3_Tubu_OnActionPerformed(evt);
@@ -1269,7 +1250,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lblDev4_tubu.setBounds(600, 730, 40, 30);
 
         btnDev4_Tubu_Off.setText("ВЫКЛ");
-        btnDev4_Tubu_Off.setEnabled(false);
         btnDev4_Tubu_Off.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev4_Tubu_OffActionPerformed(evt);
@@ -1284,7 +1264,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lbl_Dev4_Tubu_RelState.setBounds(640, 730, 70, 30);
 
         btnDev4_Tubu_On.setText("ВКЛ");
-        btnDev4_Tubu_On.setEnabled(false);
         btnDev4_Tubu_On.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev4_Tubu_OnActionPerformed(evt);
@@ -1300,7 +1279,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lblDev5_tubu.setBounds(720, 730, 40, 30);
 
         btnDev5_Tubu_Off.setText("ВЫКЛ");
-        btnDev5_Tubu_Off.setEnabled(false);
         btnDev5_Tubu_Off.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev5_Tubu_OffActionPerformed(evt);
@@ -1315,7 +1293,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lbl_Dev5_Tubu_RelState.setBounds(760, 730, 70, 30);
 
         btnDev5_Tubu_On.setText("ВКЛ");
-        btnDev5_Tubu_On.setEnabled(false);
         btnDev5_Tubu_On.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev5_Tubu_OnActionPerformed(evt);
@@ -1331,7 +1308,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lblDev6_tubu.setBounds(840, 730, 40, 30);
 
         btnDev6_Tubu_Off.setText("ВЫКЛ");
-        btnDev6_Tubu_Off.setEnabled(false);
         btnDev6_Tubu_Off.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev6_Tubu_OffActionPerformed(evt);
@@ -1346,7 +1322,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lbl_Dev6_Tubu_RelState.setBounds(880, 730, 70, 30);
 
         btnDev6_Tubu_On.setText("ВКЛ");
-        btnDev6_Tubu_On.setEnabled(false);
         btnDev6_Tubu_On.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev6_Tubu_OnActionPerformed(evt);
@@ -1362,7 +1337,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lblDev7_tubu.setBounds(960, 730, 40, 30);
 
         btnDev7_Tubu_Off.setText("ВЫКЛ");
-        btnDev7_Tubu_Off.setEnabled(false);
         btnDev7_Tubu_Off.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev7_Tubu_OffActionPerformed(evt);
@@ -1377,7 +1351,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lbl_Dev7_Tubu_RelState.setBounds(1000, 730, 70, 30);
 
         btnDev7_Tubu_On.setText("ВКЛ");
-        btnDev7_Tubu_On.setEnabled(false);
         btnDev7_Tubu_On.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev7_Tubu_OnActionPerformed(evt);
@@ -1393,7 +1366,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lblDev8_tubu.setBounds(1080, 730, 40, 30);
 
         btnDev8_Tubu_Off.setText("ВЫКЛ");
-        btnDev8_Tubu_Off.setEnabled(false);
         btnDev8_Tubu_Off.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev8_Tubu_OffActionPerformed(evt);
@@ -1408,7 +1380,6 @@ public class MainFrame3 extends javax.swing.JFrame {
         lbl_Dev8_Tubu_RelState.setBounds(1120, 730, 70, 30);
 
         btnDev8_Tubu_On.setText("ВКЛ");
-        btnDev8_Tubu_On.setEnabled(false);
         btnDev8_Tubu_On.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDev8_Tubu_OnActionPerformed(evt);

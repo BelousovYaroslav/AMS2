@@ -459,7 +459,6 @@
     <Component class="javax.swing.JButton" name="btnDev2_Anode_Off">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x42b;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev2_Anode_OffActionPerformed"/>
@@ -486,7 +485,6 @@
     <Component class="javax.swing.JButton" name="btnDev2_Anode_On">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev2_Anode_OnActionPerformed"/>
@@ -517,7 +515,6 @@
     <Component class="javax.swing.JButton" name="btnDev3_Anode_Off">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x42b;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev3_Anode_OffActionPerformed"/>
@@ -544,7 +541,6 @@
     <Component class="javax.swing.JButton" name="btnDev3_Anode_On">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev3_Anode_OnActionPerformed"/>
@@ -575,7 +571,6 @@
     <Component class="javax.swing.JButton" name="btnDev4_Anode_Off">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x42b;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev4_Anode_OffActionPerformed"/>
@@ -602,7 +597,6 @@
     <Component class="javax.swing.JButton" name="btnDev4_Anode_On">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev4_Anode_OnActionPerformed"/>
@@ -633,7 +627,6 @@
     <Component class="javax.swing.JButton" name="btnDev5_Anode_Off">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x42b;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev5_Anode_OffActionPerformed"/>
@@ -660,7 +653,6 @@
     <Component class="javax.swing.JButton" name="btnDev5_Anode_On">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev5_Anode_OnActionPerformed"/>
@@ -691,7 +683,6 @@
     <Component class="javax.swing.JButton" name="btnDev6_Anode_Off">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x42b;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev6_Anode_OffActionPerformed"/>
@@ -718,7 +709,6 @@
     <Component class="javax.swing.JButton" name="btnDev6_Anode_On">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev6_Anode_OnActionPerformed"/>
@@ -749,7 +739,6 @@
     <Component class="javax.swing.JButton" name="btnDev7_Anode_Off">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x42b;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev7_Anode_OffActionPerformed"/>
@@ -776,7 +765,6 @@
     <Component class="javax.swing.JButton" name="btnDev7_Anode_On">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev7_Anode_OnActionPerformed"/>
@@ -807,7 +795,6 @@
     <Component class="javax.swing.JButton" name="btnDev8_Anode_Off">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x42b;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev8_Anode_OffActionPerformed"/>
@@ -834,7 +821,6 @@
     <Component class="javax.swing.JButton" name="btnDev8_Anode_On">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev8_Anode_OnActionPerformed"/>
@@ -1204,7 +1190,6 @@
     <Component class="javax.swing.JButton" name="btnDev2_Tubu_Off">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x42b;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev2_Tubu_OffActionPerformed"/>
@@ -1231,7 +1216,6 @@
     <Component class="javax.swing.JButton" name="btnDev2_Tubu_On">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev2_Tubu_OnActionPerformed"/>
@@ -1262,7 +1246,6 @@
     <Component class="javax.swing.JButton" name="btnDev3_Tubu_Off">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x42b;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev3_Tubu_OffActionPerformed"/>
@@ -1289,7 +1272,6 @@
     <Component class="javax.swing.JButton" name="btnDev3_Tubu_On">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev3_Tubu_OnActionPerformed"/>
@@ -1320,7 +1302,6 @@
     <Component class="javax.swing.JButton" name="btnDev4_Tubu_Off">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x42b;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev4_Tubu_OffActionPerformed"/>
@@ -1347,7 +1328,6 @@
     <Component class="javax.swing.JButton" name="btnDev4_Tubu_On">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev4_Tubu_OnActionPerformed"/>
@@ -1378,7 +1358,6 @@
     <Component class="javax.swing.JButton" name="btnDev5_Tubu_Off">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x42b;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev5_Tubu_OffActionPerformed"/>
@@ -1405,7 +1384,6 @@
     <Component class="javax.swing.JButton" name="btnDev5_Tubu_On">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev5_Tubu_OnActionPerformed"/>
@@ -1436,7 +1414,6 @@
     <Component class="javax.swing.JButton" name="btnDev6_Tubu_Off">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x42b;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev6_Tubu_OffActionPerformed"/>
@@ -1463,7 +1440,6 @@
     <Component class="javax.swing.JButton" name="btnDev6_Tubu_On">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev6_Tubu_OnActionPerformed"/>
@@ -1494,7 +1470,6 @@
     <Component class="javax.swing.JButton" name="btnDev7_Tubu_Off">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x42b;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev7_Tubu_OffActionPerformed"/>
@@ -1521,7 +1496,6 @@
     <Component class="javax.swing.JButton" name="btnDev7_Tubu_On">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev7_Tubu_OnActionPerformed"/>
@@ -1552,7 +1526,6 @@
     <Component class="javax.swing.JButton" name="btnDev8_Tubu_Off">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x42b;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev8_Tubu_OffActionPerformed"/>
@@ -1579,7 +1552,6 @@
     <Component class="javax.swing.JButton" name="btnDev8_Tubu_On">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x412;&#x41a;&#x41b;"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDev8_Tubu_OnActionPerformed"/>
